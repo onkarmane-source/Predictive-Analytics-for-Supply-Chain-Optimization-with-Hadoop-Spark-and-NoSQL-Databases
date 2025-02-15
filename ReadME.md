@@ -1,6 +1,6 @@
 ## Supply Chain Data Processing & Predictive Analysis
 
-This project focuses on handling supply chain data, inserting it into MongoDB, and performing predictive analysis using machine learning techniques.
+This project focuses on handling supply chain data, inserting it into MongoDB, and performing predictive analysis using machine learning techniques in the **Databricks** environment.
 
 ### 📌 Project Components
 
@@ -10,31 +10,31 @@ This project focuses on handling supply chain data, inserting it into MongoDB, a
 
 2. **Predictive Analysis (`predictive_analysis_supply_chain.ipynb`)**  
    - Loads supply chain data from MongoDB.  
-   - Uses Apache Spark for data preprocessing.  
+   - Uses **Apache Spark in Databricks** for data preprocessing.  
    - Trains a **Random Forest Regressor** to predict inventory pricing.  
    - Stores predictions in MongoDB under the `prediction_data` collection.  
 
 ### ⚙️ Tech Stack
 
 - **MongoDB** (for data storage)  
-- **Apache Spark** (for predictive analysis)  
+- **Databricks (Apache Spark environment)** (for predictive analysis)  
 - **Python Libraries:**
   - `pymongo` (for MongoDB interaction)
-  - `pyspark` (for machine learning and data processing)
+  - `pyspark` (for machine learning and data processing in Databricks)
   - `pandas` (for handling CSV data)
 
 ### 🚀 Setup Instructions
 
-1. **Install Dependencies**  
+1. **Install Dependencies** (If running locally, not needed in Databricks)
    ```sh
    pip install pymongo pyspark pandas
    ```
 
 2. **Insert Data into MongoDB**  
-   - Run `insert_data_mongo.ipynb` to load supply chain data into MongoDB.
+   - Run `insert_data_mongo.ipynb` in Databricks to load supply chain data into MongoDB.
 
 3. **Run Predictive Analysis**  
-   - Run `predictive_analysis_supply_chain.ipynb` to train the model and store predictions.
+   - Run `predictive_analysis_supply_chain.ipynb` in Databricks to train the model and store predictions.
 
 ### 📈 Predictive Analysis Workflow
 
@@ -45,3 +45,9 @@ This project focuses on handling supply chain data, inserting it into MongoDB, a
 ### 📊 Output
 
 - Predictions are stored in MongoDB for further business insights.
+
+### ⚡ Running in Databricks
+
+- Ensure **Databricks Runtime includes Apache Spark**.
+- Upload and run notebooks in Databricks.
+- Connect Databricks to MongoDB for data storage and retrieval.
