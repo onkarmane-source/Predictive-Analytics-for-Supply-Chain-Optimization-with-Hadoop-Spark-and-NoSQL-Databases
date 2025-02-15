@@ -25,7 +25,7 @@ This project focuses on handling supply chain data, inserting it into MongoDB, a
 
 ### 🚀 Setup Instructions
 
-1. **Install Dependencies** (If running locally, not needed in Databricks)
+1. **Install Dependencies** (If running locally needs pyspark installation, not needed in Databricks)
    ```sh
    pip install pymongo pyspark pandas
    ```
